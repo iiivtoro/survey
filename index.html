@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mood Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charstet="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<div>
+    <header>
+        <h1 id="title">Mood Survey Form</h1>
+        <p id="description" class="description">Thank you for taking the time to help us improve the brand</p>
+    </header>
+
+    <body>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name <input id="name" name="name" type="text"
+                        placeholder="Enter you Name" class="cp" required>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email <input id="email" name="email" type="email"
+                        placeholder="Enter your Email" required>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age (optional) <input id="number" type="number" name="number"
+                        min="8" max="120" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>What option describe you the most?
+                    <select id="dropdown" name="dropdown" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="viewer">Viewer</option>
+                        <option value="regular">Regular client</option>
+                        <option value="vip">Vip client</option>
+                        <option value="owner">Brand owner</option>
+                        <option value="sponsor">Sponsor</option>
+                    </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend MOOD to a friend</p>
+                <label><input class="inline" type="radio" name="recommend" value="definetly" checked>Definetly</label>
+                <label><input class="inline" type="radio" name="recommend" value="maybe">Maybe</label>
+                <label><input class="inline" type="radio" name="recommend" value="not-sure">Not sure</label>
+            </div>
+
+            <div class="form-group">
+                <p>What release do you like it the most?</p>
+                <select id="realese" name="realese" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="Sign-T">Sign-Lenguage Tshirt</option>
+                    <option value="Sign-H">Sign Lenguage Hoodie</option>
+                    <option value="Wheels-T">Skate-wheels Tshirt</option>
+                    <option value="Wheels-T">Skate-wheels Cap</option>
+                    <option value="Braille-CP">Braille Cargo Pants</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>In which garment/s would you like to see a new release</p>
+                <label><input class="inline" type="checkbox" name="like-to-see" value="T-Shirts">T-shirts</label>
+                <label><input class="inline" type="checkbox" name="like-to-see" value="Hooddies">Hoddies</label>
+                <label><input class="inline" type="checkbox" name="like-to-see" value="Pants">Pants</label>
+                <label><input class="inline" type="checkbox" name="like-to-see" value="Caps">Caps</label>
+                <label><input class="inline" type="checkbox" name="like-to-see" value="Merch">Merch</label>
+                <label><input class="inline" type="checkbox" name="like-to-see" value="Cards">Cards</label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" name="comment" rows="3" cols="30" placeholder="Express yourself here...">
+        </textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+
+
+</div>
+</form>
+
+</body>
+
+</html>
